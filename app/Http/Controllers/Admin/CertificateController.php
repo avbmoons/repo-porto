@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Certificate;
 use Illuminate\Http\Request;
 
 class CertificateController extends Controller
@@ -14,7 +15,11 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        return \view('admin.certificates.index');
+        $model = new Certificate();
+        // $certificatesList = [];
+        $certificatesList = $model->getCertificates();
+
+        return \view('admin.certificates.index', ['certificatesList' => $certificatesList]);
     }
 
     /**
