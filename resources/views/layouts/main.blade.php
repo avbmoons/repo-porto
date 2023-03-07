@@ -35,7 +35,7 @@
         </section>
         <section class="competencies">
             @section('competencies')
-                competencies
+                <x-blocks.competencies></x-blocks.competencies>
             @show
         </section>
         <section class="portfolio">

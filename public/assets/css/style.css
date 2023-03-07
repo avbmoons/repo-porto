@@ -1,30 +1,30 @@
 :root {
     --grey: rgb(224, 224, 231);
   }
-  
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: sans-serif;
     font-size: 16px;
   }
-  
+
   .container {
     max-width: 1220px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: content-box;
   }
-  
+
   header {
     padding: 10px 0;
     background-color: var(--grey);
   }
-  
+
   .main {
     display: grid;
     gap: 20px;
@@ -33,20 +33,151 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
   }
-  
+
   img {
     width: 100%;
     height: auto;
   }
-  
+
   section {
     display: flex;
     background-color: var(--grey);
-    border-radius: 0px 30px;
   }
-  
+
+/* ----------COMPETENCIES BEGIN-------------- */
+
+.competencies {
+    background-color: transparent;
+}
+
+.competencies-block {
+    max-width: 428px;
+    height: 428px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.competencies-header {
+    font-size: 32px;
+}
+
+.competencies-listblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+
+.competencies-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.competencies-list-li {
+    margin: 7px 12px;
+    background-repeat: no-repeat;
+    background-size: 40px 28px;
+    background-position: 0 0;
+    padding: 5px 0px;
+    padding-left: 50px;
+}
+
+/* --------ICONS--------- */
+
+.laravel {
+    background-image: url(../../img/Laravel.svg);
+}
+
+.css {
+    background-image: url(../../img/css3.svg);
+}
+
+.php {
+    background-image: url(../../img/php.svg);
+}
+
+.cplus {
+    background-image: url(../../img/cplus.svg);
+}
+
+.csharp {
+    background-image: url(../../img/csharp.svg);
+}
+
+.figma {
+    background-image: url(../../img/figma.svg);
+}
+
+.java {
+    background-image: url(../../img/java.svg);
+}
+
+.js {
+    background-image: url(../../img/js.svg);
+}
+
+.linux {
+    background-image: url(../../img/linux.svg);
+}
+
+.mysql {
+    background-image: url(../../img/mysql.svg);
+}
+
+.photoshop {
+    background-image: url(../../img/photoshop.svg);
+}
+
+.phpstorm {
+    background-image: url(../../img/phpstorm.svg);
+}
+
+.postgresql {
+    background-image: url(../../img/postgresql.svg);
+}
+
+.pyton {
+    background-image: url(../../img/pyton.svg);
+}
+
+.react {
+    background-image: url(../../img/react.svg);
+}
+
+.sqlite {
+    background-image: url(../../img/sqlite.svg);
+}
+
+.ubuntu {
+    background-image: url(../../img/ubuntu.svg);
+}
+
+.vs {
+    background-image: url(../../img/vs.svg);
+}
+
+.vsc {
+    background-image: url(../../img/vsc.svg);
+}
+
+/* -----------COMPETENCIES END----------------- */
+
   @media(min-width:430px) {
-  
+
     .main {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -55,28 +186,28 @@
       margin-top: 60px;
       margin-bottom: 60px;
     }
-  
+
     .avatar,
     .greetings {
       grid-row-start: 1;
       grid-row-end: 3;
     }
-  
+
     .portfolio {
       grid-row-start: 3;
       grid-row-end: 6;
     }
-  
+
     .calculator {
       grid-row-start: 6;
       grid-row-end: 7;
     }
-  
+
     .competencies {
       grid-row-start: 3;
       grid-row-end: 5;
     }
-  
+
     .certificates {
       grid-row-start: 5;
       grid-row-end: 7;
@@ -87,7 +218,7 @@
       grid-row-start: 1;
       grid-row-end: 3;
     }
-  
+
     .feedback {
       grid-row-start: 7;
       grid-row-end: 9;
@@ -95,7 +226,7 @@
       grid-column-end: 3;
     }
   }
-  
+
   footer {
     padding: 10px 0;
     background-color: var(--grey);
