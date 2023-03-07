@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Competency;
 use Illuminate\Http\Request;
 
 class CompetencyController extends Controller
@@ -14,7 +15,11 @@ class CompetencyController extends Controller
      */
     public function index()
     {
-        return \view('admin.competencies.index');
+        $model = new Competency();
+        //$competenciesList = [];
+        $competenciesList = $model->getCompetencies();
+
+        return \view('admin.competencies.index', ['competenciesList' => $competenciesList]);
     }
 
     /**
