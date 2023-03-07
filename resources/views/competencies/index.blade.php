@@ -1,7 +1,5 @@
-<br>
-<x-menu></x-menu>
-<br>
-<hr>
-<div>
-    Тут будут Компетенции
-</div>
+@extends('layouts.main')
+
+@section('competencies')
+    <h2>Section competencies</h2>
+@endsection
