@@ -1,5 +1,14 @@
-<nav class="nav">
-    <ul class="nav-lists">
+<div class="nav-scroller py-1 mb-2">
+<nav class="nav d-flex justify-content-between">
+    <a href="{{ route('main') }}" class="nav-lists__link">Главная &nbsp;</a>
+    <a href="{{ route('competencies') }}" class="nav-lists__link">Компетенции &nbsp;</a>
+    <a href="{{ route('certificates') }}" class="nav-lists__link">Сертификаты &nbsp;</a>
+    <a href="{{ route('portfolios') }}" class="nav-lists__link">Работы &nbsp;</a>
+    <a href="{{ route('greetings') }}" class="nav-lists__link">Приветствие &nbsp;</a>
+    <a href="{{ route('feedbacks') }}" class="nav-lists__link">Общение &nbsp;</a>
+    <a href="{{ route('calculator') }}" class="nav-lists__link">Калькулятор &nbsp;</a>
+    <a href="{{ route('admin.admin') }}" class="nav-lists__link">Админка &nbsp;</a>
+    {{-- <ul class="nav-lists">
         <li class="nav-lists__item">
             <a href="{{ route('main') }}" class="nav-lists__link">
                 Главная
@@ -40,9 +49,9 @@
                 Админка
             </a>
         </li>
-    </ul>
+    </ul> --}}
 </nav>
-
+</div>
 {{-- <a href="{{ route('references') }}">Рекомендации</a>
 <a href="{{ route('projects') }}">Проекты</a>   --}}
 
