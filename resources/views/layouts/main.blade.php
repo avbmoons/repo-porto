@@ -50,10 +50,9 @@
           <h2 class="portfolio-title">Выполненные проекты</h2>
         </section>
         <section class="competence">
-          <h2 class="portfolio-title">Компетенции</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente maxime, reiciendis quibusdam ipsum, exercitationem natus earum magnam soluta officiis aut commodi ipsa illo temporibus ad dicta tempore itaque qui similique!
-          </p>
+            @section('competencies')
+                <x-blocks.competencies></x-blocks.competencies>
+            @show
         </section>
         <section class="calculator">
           <h2 class="portfolio-title">Калькулятор</h2>

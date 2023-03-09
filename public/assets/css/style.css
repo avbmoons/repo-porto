@@ -85,7 +85,7 @@ section {
   .main-box .container {
     grid-template-columns: 1fr;
   }
-
+  
   h1 {
     font-size: 32px;
   }
@@ -109,3 +109,136 @@ section {
     padding-top: 0;
   }
 }
+
+/* ----------COMPETENCIES BEGIN-------------- */
+
+.competencies {
+    background-color: transparent;
+}
+
+.competencies-block {
+    max-width: 428px;
+    min-height: 428px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.competencies-header {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.competencies-listblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 428px;
+}
+
+.competencies-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.competencies-list-li {
+    margin: 7px 12px;
+    background-repeat: no-repeat;
+    background-size: 40px 28px;
+    background-position: 0 0;
+    padding: 5px 0px;
+    padding-left: 50px;
+}
+
+/* --------ICONS--------- */
+
+.laravel {
+    background-image: url(../../img/Laravel.svg);
+}
+
+.css {
+    background-image: url(../../img/css3.svg);
+}
+
+.php {
+    background-image: url(../../img/php.svg);
+}
+
+.cplus {
+    background-image: url(../../img/cplus.svg);
+}
+
+.csharp {
+    background-image: url(../../img/csharp.svg);
+}
+
+.figma {
+    background-image: url(../../img/figma.svg);
+}
+
+.java {
+    background-image: url(../../img/java.svg);
+}
+
+.js {
+    background-image: url(../../img/js.svg);
+}
+
+.linux {
+    background-image: url(../../img/linux.svg);
+}
+
+.mysql {
+    background-image: url(../../img/mysql.svg);
+}
+
+.photoshop {
+    background-image: url(../../img/photoshop.svg);
+}
+
+.phpstorm {
+    background-image: url(../../img/phpstorm.svg);
+}
+
+.postgresql {
+    background-image: url(../../img/postgresql.svg);
+}
+
+.pyton {
+    background-image: url(../../img/pyton.svg);
+}
+
+.react {
+    background-image: url(../../img/react.svg);
+}
+
+.sqlite {
+    background-image: url(../../img/sqlite.svg);
+}
+
+.ubuntu {
+    background-image: url(../../img/ubuntu.svg);
+}
+
+.vs {
+    background-image: url(../../img/vs.svg);
+}
+
+.vsc {
+    background-image: url(../../img/vsc.svg);
+}
+
+/* -----------COMPETENCIES END----------------- */
