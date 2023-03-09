@@ -3,5 +3,11 @@
 <br>
 <hr>
 <div>
-    Тут будут Сертификаты (слайдер)
+   <div class="container">
+        <div id="slider">
+            <!-- <img src="./images/1.png" alt="img">
+            <img src="./images/2.png" alt="img">
+            <img src="./images/3.png" alt="img"> -->
+        </div>
+    </div>
 </div>
