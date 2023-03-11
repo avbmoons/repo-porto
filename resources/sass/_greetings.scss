@@ -1,42 +1,58 @@
+@mixin font($ff, $fs, $fsi, $fw, $lh){
+    font-family: $ff;
+    font-style: $fs;
+    font-size: $fsi;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
 .greetings-container{
     max-width: 1324px;
-    height: 202px;
+    height: 546px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 470px 854px;
+    @media (max-width: 1024px) {
+        max-width: 964px;
+        height: 344px;
+        grid-template-columns: 308px, 656px;
+    }
+    @media (max-width: 320px) {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: 690px;
+    }
 }
 
 .greetings-img{
     padding: 37px 21px 5px 21px;
+    @media (max-width: 1024px) {
+        padding: 0;
+        height: 100%;
+        width: auto;
+    }
 }
 
 .greetings-txt{
     padding: 96px 112px 95px 111px;
-    /* font-family: 'roboto';
-    font-variation-settings: "wght" 500; */
-}
-
-.greetings-txt-h1{
-    font-family: 'Playfair Display';
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.reetings-txt-h2{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.reetings-txt-p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+    h1{
+        @include font('Playfair Display', normal, 48px, 500, 64px);
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    h2{
+        @include font('Roboto', normal, 32px, 500, 38px);
+    }
+    p{
+        @include font('Roboto', normal, 16px, 400, 150%);
+    }
+    @media (max-width: 1024px) {
+        padding: 0, 0, 0, 20xp;
+    }
+    @media (max-width: 320px) {
+        max-width: 300px;
+        height: 355px;
+        padding-top: 20px;
+    }
 }
