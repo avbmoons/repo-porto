@@ -1,10 +1,15 @@
 @import "normalize";
 @import "fonts/roboto";
 @import "fonts/playfair-display";
+@import "variables";
 @import "mixin";
 @import "interface";
 
+//********** ICONS
+@import "icons/icons";
 
+//********** NAVIGATION
 @import "navigation/nav";
 
 
+@import "sections/feedback";

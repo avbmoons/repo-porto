@@ -1,0 +1,9 @@
+.icon {
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $iconColor;
+    &__attach-file {
+        mask-image: url("/storage/app/public/images/icons/attach-file.svg");
+    }
+}
