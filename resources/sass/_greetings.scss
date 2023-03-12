@@ -26,10 +26,10 @@
 }
 
 .greetings-img{
-    padding: 37px 21px 5px 21px;
+    display: block;
+    margin: auto;
     @media (max-width: 1024px) {
-        padding: 0;
-        height: 100%;
+        height: 147px;
         width: auto;
     }
 }
@@ -38,14 +38,31 @@
     padding: 96px 112px 95px 111px;
     h1{
         @include font('Playfair Display', normal, 48px, 500, 64px);
-        letter-spacing: 0em;
         text-align: left;
+        @media (max-width: 1024px) {
+            @include font('Playfair Display', Medium, 48px, '', 43px);
+        }
+        @media (max-width: 320px) {
+            @include font('Playfair Display', Medium, 32px, '', 43px);
+        }
     }
     h2{
         @include font('Roboto', normal, 32px, 500, 38px);
+        @media (max-width: 1024px) {
+            @include font('Roboto', Medium, 24px, '', 28px);
+        }
+        @media (max-width: 320px) {
+            @include font('Roboto', Medium, 24px, '', 28px);
+        }
     }
     p{
         @include font('Roboto', normal, 16px, 400, 150%);
+        @media (max-width: 1024px) {
+            @include font('Roboto', Regular, 16px, '', 24px);
+        }
+        @media (max-width: 320px) {
+            @include font('Roboto', Regular, 16px, '', 24px);
+        }
     }
     @media (max-width: 1024px) {
         padding: 0, 0, 0, 20xp;

@@ -1,6 +1,6 @@
 <div class="greetings-container">
     <div class="greetings-img">
-        <img src="/resources/img/cat.png" alt="">
+        <img src="/resources/img/Icon-User.svg" alt="">
     </div>
     <div class="greetings-txt">
         <h1 class="greetings-txt-h1">
