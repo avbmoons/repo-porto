@@ -1,5 +1,5 @@
 <div class="competencies-block">
-    <h3 class="competencies-header">Компетенции</h3>
+    <h2 class="certificates-title title">Компетенции</h2>
     <div class="competencies-listblock">
         <ul class="competencies-list">
             <li class="competencies-list-li laravel">Laravel</li>

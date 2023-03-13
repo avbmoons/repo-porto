@@ -32,10 +32,25 @@ body {
 //******************* LINKS ***********************
 a {
     text-decoration: none;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
 
 //******************* BUTTONS ***********************
 button {
+    outline: none;
+    border: none;
+}
+//******************* INPUTS ***********************
+input {
+    outline: none;
+    border: none;
+}
+//******************* TEXTAREA ***********************
+textarea {
     outline: none;
     border: none;
 }
@@ -46,4 +61,10 @@ ul {
 }
 li {
     list-style-type: none;
+}
+//******************* TITLES ***********************
+.title {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 500;
 }
