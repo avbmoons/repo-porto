@@ -1,0 +1,24 @@
+.calculator {
+    background-color: transparent;
+    & h2 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.in-progress {
+    display: flex;
+    background-image: url("/storage/app/public/images/inprogress.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    & p {
+        text-align: center;
+        width: 100%;
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 300;
+
+    }
+}

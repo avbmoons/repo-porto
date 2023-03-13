@@ -59,7 +59,8 @@
                 @show
             </section>
             <section class="calculator">
-                <h2 class="portfolio-title">Калькулятор</h2>
+                <h2 class="portfolio-title title">Калькулятор</h2>
+                <x-blocks.calculator></x-blocks.calculator>
             </section>
         </div>
     </div>
