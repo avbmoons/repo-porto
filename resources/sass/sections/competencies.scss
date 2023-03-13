@@ -1,0 +1,126 @@
+.competence {
+    background-color: transparent;
+}
+.competencies {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+    &-block {
+        max-width: 428px;
+        display: flex;
+        flex-direction: column;
+        & h2 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    &-listblock {
+        display: flex;
+        height: 100%;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        list-style-type: none;
+        min-height: 380px;
+    }
+    &-list-li {
+        margin: 7px 12px;
+        background-repeat: no-repeat;
+        background-size: 40px 28px;
+        background-position: 0 0;
+        padding: 5px 0px;
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    .competencies-block {
+        max-width: 100%;
+    }
+    .competencies-list {
+        min-height: 200px;
+    }
+}
+
+// --------ICONS---------
+
+.laravel {
+    background-image: url("/storage/app/public/images/icons/laravel.svg");
+}
+
+.css {
+    background-image: url("/storage/app/public/images/icons/css3.svg");
+}
+
+.php {
+    background-image: url("/storage/app/public/images/icons/php.svg");
+}
+
+.cplus {
+    background-image: url("/storage/app/public/images/icons/cplus.svg");
+}
+
+.csharp {
+    background-image: url("/storage/app/public/images/icons/csharp.svg");
+}
+
+.figma {
+    background-image: url("/storage/app/public/images/icons/figma.svg");
+}
+
+.java {
+    background-image: url("/storage/app/public/images/icons/java.svg");
+}
+
+.js {
+    background-image: url("/storage/app/public/images/icons/js.svg");
+}
+
+.linux {
+    background-image: url("/storage/app/public/images/icons/linux.svg");
+}
+
+.mysql {
+    background-image: url("/storage/app/public/images/icons/mysql.svg");
+}
+
+.photoshop {
+    background-image: url("/storage/app/public/images/icons/photoshop.svg");
+}
+
+.phpstorm {
+    background-image: url("/storage/app/public/images/icons/phpstorm.svg");
+}
+
+.postgresql {
+    background-image: url("/storage/app/public/images/icons/postgresql.svg");
+}
+
+.pyton {
+    background-image: url("/storage/app/public/images/icons/pyton.svg");
+}
+
+.react {
+    background-image: url("/storage/app/public/images/icons/react.svg");
+}
+
+.sqlite {
+    background-image: url("/storage/app/public/images/icons/sqlite.svg");
+}
+
+.ubuntu {
+    background-image: url("/storage/app/public/images/icons/ubuntu.svg");
+}
+
+.vs {
+    background-image: url("/storage/app/public/images/icons/vs.svg");
+}
+
+.vsc {
+    background-image: url("/storage/app/public/images/icons/vsc.svg");
+}
